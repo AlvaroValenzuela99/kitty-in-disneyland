@@ -1,6 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 :root{
     --rosaSuave: #FDEBF7;
     --rosaMedio: #FBCAFF;
     --rosaMas: #FFADF0;
     --rosaFuerte: #FC28FB:
+}
+
+html {
+    box-sizing: border-box;/* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--rosaSuave);
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Main */
+
+.sobre-mi{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.sobre-mi h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase
+}
+.sobre-mi-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.foto-sobre-mi{
+    width: 400px;
+    border-radius: 40px;
 }
