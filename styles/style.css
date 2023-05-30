@@ -104,6 +104,8 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    font-size: 20px;
+    line-height: 40px;
 }
 .foto-sobre-mi{
     width: 350px;
@@ -123,7 +125,35 @@ nav a:hover{
 .paquete{
     background-color: white;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 50px;
     box-shadow: 10px 10px 27px 19px rgba(0,0,0,0.1);
+}
+
+.btn{
+    float: right;
+}
+
+/* Novedades */
+.novedades{
+    margin-top: 100px;
+}
+
+/* Opiniones */
+.opiniones{
+    margin-top: 100px;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-footer-img{
+    width: 150px;
+    text-align: center;
 }
