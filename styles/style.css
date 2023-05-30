@@ -4,7 +4,7 @@
     --rosaSuave: #FDEBF7;
     --rosaMedio: #FBCAFF;
     --rosaMas: #FFADF0;
-    --rosaFuerte: #FC28FB:
+    --rosaFuerte: #FC28FB;
 }
 
 html {
@@ -19,9 +19,39 @@ a{
     text-decoration: none;
 }
 
+h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: var(--rosaMedio);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.btn{
+    border: none;
+    background-color: var(--rosaMas);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: var(--rosaMedio);
+}
+
 .container{
-    width: 80%;
+    max-width: 70rem;
     margin: 0 auto;
+}
+
+.titulo-seccion{
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -35,10 +65,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 100px;
+    background-color: var(--rosaMedio);
 }
 
 .logo{
-    width: 200px;
+    width: 150px;
 }
 
 nav{
@@ -48,18 +80,25 @@ nav{
     font-size: 20px;
 }
 
+nav a{
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+nav a:hover{
+    background-color: var(--rosaSuave);
+    transition: 0.5s ease;
+}
+
 /* Main */
 
+/* Sobre mi */
 .sobre-mi{
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
+    margin-top: 60px;
 }
-.sobre-mi h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 35px;
-    text-transform: uppercase
-}
+
 .sobre-mi-texto{
     display: flex;
     justify-content: center;
@@ -67,6 +106,24 @@ nav{
     gap: 30px;
 }
 .foto-sobre-mi{
-    width: 400px;
+    width: 350px;
     border-radius: 40px;
+}
+
+/* Paquetes Disney */
+.paquetes{
+    margin-top: 100px;
+}
+
+.paquetes-disney{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.paquete{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 27px 19px rgba(0,0,0,0.1);
 }
