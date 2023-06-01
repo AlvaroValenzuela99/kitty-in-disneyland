@@ -204,12 +204,58 @@ aside{
     right: 0;
 }    
 
-
 }
 
 @media(max-width: 1420px){
 
     aside{
         display: none;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .header{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header nav{
+        gap: 30px;
+    }
+
+    nav a{
+       padding: 0;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-mi-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-mi-section img{
+        max-width: 90%;
+    }
+
+}
+
+@media(max-width:390px){
+
+    .header nav{
+        display: none;
+    }
+
+    .paquetes-disney{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paquete{
+        width: 95%;
     }
 }
