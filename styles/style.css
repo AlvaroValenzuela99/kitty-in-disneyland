@@ -5,6 +5,8 @@
     --rosaMedio: #FBCAFF;
     --rosaMas: #FFADF0;
     --rosaFuerte: #FC28FB;
+
+    --fuenteGris: rgb(91,103,132);
 }
 
 html {
@@ -63,14 +65,16 @@ body {
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 100px;
-    background-color: var(--rosaMedio);
-}
-
-.logo{
-    width: 150px;
+    background-color: #FFE5F5;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    height: 35vh; 
+    width: 100vw;
 }
 
 nav{
@@ -156,14 +160,48 @@ aside{
 .paquete{
     background-color: white;
     margin: 20px;
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 50px;
     box-shadow: 10px 10px 27px 19px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.btn{
-    float: right;
+.paquete img{
+    width: 100%;
+    max-height: 50%;
+    border-radius: 30px;
 }
+
+.texto-paquete{
+    line-height: 13px;
+}
+
+.fecha{
+    color: var(--fuenteGris);
+    font-weight: 400;
+}
+
+.texto-paquete h3{
+    font-size: 26px;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio p{
+    color: black;
+    font-size: 18px;
+}
+.precio p span{
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
 
 /* Novedades */
 .novedades{
@@ -216,22 +254,23 @@ aside{
 
 @media(max-width: 768px){
 
-    .header{
-        max-width: 100%;
-        padding: 0;
-    }
-
-    .header nav{
-        gap: 30px;
-    }
-
-    nav a{
-       padding: 0;
-    }
-
     .container{
         max-width: 90%;
     }
+
+    .header{
+        width: 100vw;
+        height: 20vh;
+        max-width: 100%;
+        padding: 0;
+        background-size: cover;
+        background-position: 75%;
+    }
+
+    .header nav{
+        display: none;
+    }
+
 
     .sobre-mi-section{
         display: flex;
@@ -242,13 +281,6 @@ aside{
         max-width: 90%;
     }
 
-}
-
-@media(max-width:390px){
-
-    .header nav{
-        display: none;
-    }
 
     .paquetes-disney{
         display: flex;
@@ -257,5 +289,22 @@ aside{
 
     .paquete{
         width: 95%;
+    }
+
+    .texto-paquete{
+        line-height: 18px;
+    }
+
+    .precio{
+        display: block;
+        margin-top: 30px;
+    }
+    .btn{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logo-footer-img{
+        max-width: 100px;
     }
 }
