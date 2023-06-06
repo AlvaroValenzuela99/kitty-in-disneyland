@@ -217,8 +217,32 @@ aside{
     background-color: white;
     border-radius: 50px;
     box-shadow: 10px 10px 27px 19px rgba(0,0,0,0.1);
-    padding: 30px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
 
+.slider img{
+    max-width: 25%;
+    border-radius: 30px;
+}
+
+.texto-opinion{
+    color: rgb(91,103,132);
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.autor-opinion{
+    color: var(--rosaFuerte);
+    font-weight: 700;
+}
+
+.autor-opinion span{
+    color: black;
 }
 
 /* Footer */
@@ -285,6 +309,8 @@ aside{
     .paquetes-disney{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .paquete{
@@ -302,6 +328,17 @@ aside{
     .btn{
         width: 100%;
         padding: 15px;
+    }
+
+    .slider{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .slider img{
+        max-width: 70%;
     }
 
     .logo-footer-img{
