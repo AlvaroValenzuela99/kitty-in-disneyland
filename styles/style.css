@@ -350,6 +350,18 @@ aside{
     background-color: var(--rosaMas);
 }
 
+.derechos{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.derechos p{
+    margin: 0;
+}
+
 /* Media Queries */
 @media(max-width: 1500px){
 
